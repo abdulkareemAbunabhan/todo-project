@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4f7fe5e387.js" crossorigin="anonymous"></script>
     <title>todo project</title>
 </head>
+
 <body>
     <header>
-        <section> <!--this section is for the logo and the site name-->
-            <img src="https://user-images.githubusercontent.com/123550658/215783363-aec5e700-f6cb-432b-bab3-b3ad71e7b48d.png" alt="logo">
-            <h1>ToDo Achivements</h1>
+        <section class="hdSec" id="hdSec"> <!--this section is for the logo and the site name-->
+            <img src="https://user-images.githubusercontent.com/123550658/215783363-aec5e700-f6cb-432b-bab3-b3ad71e7b48d.png"
+                alt="logo">
+            <a id="tit" href="/"><b>Achivements ToDo</b></a>
         </section>
-         <section> <!--this section is for navBar -->
+        <section class="hdSec"> <!--this section is for navBar -->
             <nav>
                 <a href="/">home</a>
-                <a href="about.html">about</a>
+                <a href="about.html" class="active">about us</a>
             </nav>
         </section>
-
     </header>
+    <div id="prv">
+        <img src="https://user-images.githubusercontent.com/123550658/216051656-3de08250-3cc4-4311-9b26-a12b68b7c030.png"
+            alt="previewImage">
+
+    </div>
     <main>
-    <section> <!--photo and some info-->
-        <h1>Name : Achievments todo</h1>
-        <img src="https://user-images.githubusercontent.com/123550658/215785147-1e4ed0f7-90c7-4244-bcfc-378fa56b3ca0.jpg" alt="previewImage">
-        <label for="des">Descreption:</label>
-        <p id="des">this is to help you track your progress and achieve your goals in life step by step every single day.</p>  
-        <br><br>
+        <section id="abtPic"> <!--photo and some info-->
+            <span class="container">
+                <img src="https://user-images.githubusercontent.com/123550658/216152853-ac586f19-d13b-4338-bd95-b5bbcaa10a7f.png"
+                    alt="previewImage" id="bck">
+                <img src="https://user-images.githubusercontent.com/123550658/216153251-2e454122-e0bf-4340-9f5d-dd9498807d58.png"
+                    alt="" id="pic">
+            </span>
+            <span>
+                <h1>Name : Abdulkareem Abunabhan</h1>
+                <p id="des">this is to help you track your progress and achieve your goals in life step by step every
+                    single day. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium error quos quia
+                    officia voluptatem corrupti distinctio assumenda porro ipsa dolorum temporibus laboriosam vitae
+                    perferendis in ut libero, obcaecati doloribus doloremque.</p>
+                <p id="des">this is to help you track your progress and achieve your goals in life step by step every
+                    single day. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium error quos quia
+                    officia voluptatem corrupti distinctio assumenda porro ipsa dolorum temporibus laboriosam vitae
+                    perferendis in ut libero, obcaecati doloribus doloremque.</p>
+                <p id="des">this is to help you track your progress and achieve your goals in life step by step every
+                    single day. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium error quos quia
+                    officia voluptatem corrupti distinctio assumenda porro ipsa dolorum temporibus laboriosam vitae
+                    perferendis in ut libero, obcaecati doloribus doloremque.</p>
+            </span>
 
-    </section>
-    <section>
-        <h1>Your info</h1>
-    <form>
-        <label for="name">You name:</label>
-        <input type="text" id="name">
-        <label for="email">your email</label>
-        <input type="email" id="email">
-        <label for="mess">your message</label>
-        <textarea name="mess" id="mess" cols="30" rows="5"></textarea>
-         <button>submit</button>   
-    </form>
+            <br><br>
 
-    </section>
+        </section>
+        <h1 id="con">Contact Me</h1>
+        <section id="frmscn">
+            <form align="center">
+                <div class="frm">
+                    <label for="name">You name:</label>
+                    <input type="text" id="name"><br>
+                </div>
+                <div class="frm">
+                    <label for="email">your email</label>
+                    <input type="email" id="email"><br>
+                </div>
+                <div class="frm">
+                    <label for="mess">your message</label>
+                    <textarea name="mess" id="mess" cols="30" rows="5"></textarea><br>
+                </div>
+                <button>submit</button>
+            </form>
+
+        </section>
     </main>
     <footer>
         <section> <!--this section is for the contact info-->
@@ -49,8 +85,25 @@
             <p>Phone Number: +962781111111</p>
             <p>E-mail : aaaaa@gmail.com</p>
             <p>whatsup.com/+96277777777</p>
+            <p>&copy; all rights reserved</p>
+
         </section>
-        <p>&copy; all rights reserved</p>
+        <section>
+            <h3>Join Our team</h3>
+            <p>Phone Number: +96274444444</p>
+            <p>E-mail : bbbbbb@gmail.com</p>
+            <p>whatsup.com/+96233333333</p>
+            <div class="ftrmg">
+                <img src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png" alt="">
+                <img src="https://cdn.icon-icons.com/icons2/642/PNG/512/linkedin_icon-icons.com_59208.png" alt="">
+                <img src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png"
+                    alt="">
+                <img src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580651-yumminkysocialmedia28_83061.png"
+                    alt="">
+            </div>
+        </section>
+
     </footer>
 </body>
+
 </html>

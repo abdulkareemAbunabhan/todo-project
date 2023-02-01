@@ -1,69 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4f7fe5e387.js" crossorigin="anonymous"></script>
     <title>todo project</title>
 </head>
+
 <body>
     <header>
-        <section> <!--this section is for the logo and the site name-->
-            <img src="https://user-images.githubusercontent.com/123550658/215783363-aec5e700-f6cb-432b-bab3-b3ad71e7b48d.png" alt="logo">
-            <h1>ToDo Achivements</h1>
+        <section class="hdSec" id="hdSec"> <!--this section is for the logo and the site name-->
+            <img src="https://user-images.githubusercontent.com/123550658/215783363-aec5e700-f6cb-432b-bab3-b3ad71e7b48d.png"
+                alt="logo">
+            <a id="tit" href="/"><b>Achivements ToDo</b></a>
         </section>
-         <section> <!--this section is for navBar -->
+        <section class="hdSec"> <!--this section is for navBar -->
             <nav>
-                <a href="/">home</a>
-                <a href="about.html">about</a>
+                <a href="/" class="active">home</a>
+                <a href="about.html">about us</a>
             </nav>
         </section>
     </header>
-    <br> <br> <br>
-    <main>
+    <div id="prv">
+        <img src="https://user-images.githubusercontent.com/123550658/216051656-3de08250-3cc4-4311-9b26-a12b68b7c030.png"
+            alt="previewImage">
 
-        <section> <!--this one for the table-->
-            <table border="1">
-                <tr>
-                    <th>Task</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>pray</td>
-                    <td>
-                        done <input type="radio" name="done">
-                        not yet <input type="radio" name="done">
-                    </td>
-                </tr>
-                <tr>
-                    <td>study</td>
-                    <td>
-                        done <input type="radio" name="done1">
-                        not yet <input type="radio" name="done1">
-                    </td>
-                </tr>
-                <tr>
-                    <td>workout</td>
-                    <td>
-                        done <input type="radio" name="done2">
-                        not yet <input type="radio" name="done2">
-                    </td>
-                </tr>
-                <tr>
-                    <td>read</td>
-                    <td>
-                        done <input type="radio" name="done3">
-                        not yet <input type="radio" name="done3">
-                    </td>
-                </tr>
-                <tr>
-                    <td>contact with family</td>
-                    <td>
-                        done <input type="radio" name="done4">
-                        not yet <input type="radio" name="done4">
-                    </td>
-                </tr>
-            </table>
+    </div>
+    <div id="ball">
+        <img src="https://user-images.githubusercontent.com/123550658/215783363-aec5e700-f6cb-432b-bab3-b3ad71e7b48d.png"
+            alt="">
+    </div>
+
+    <main>
+        <h1>Track your progress</h1><br>
+        <section id="tbl"> <!--this one for the table-->
+            <span class="tbl">
+                <h2>Daily progress</h2>
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>pray</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>study</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>workout</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>read</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>meditation</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>contact with family</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>sleep</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                </table>
+            </span>
+            <span class="tbl">
+                <h2>Weekly progress</h2>
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>thursday</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                </table>
+            </span>
+            <span class="tbl">
+                <h2>Monthly Progress</h2>
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>First Week</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Second Week</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Third Week</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fourth Week</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fifth Week</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+
+                </table>
+            </span>
+            <span class="tbl">
+                <h2>Yearly progress</h2>
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>June</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+
+                </table>
+            </span>
+            <span class="tbl">
+                <h2>Yearly progress</h2>
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Septemper</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Octobor</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>
+                            <div class="progress" onclick="this.style.backgroundColor='green'"></div>
+                        </td>
+                    </tr>
+
+                </table>
+            </span>
+
         </section>
     </main>
     <footer>
@@ -72,8 +283,23 @@
             <p>Phone Number: +962781111111</p>
             <p>E-mail : aaaaa@gmail.com</p>
             <p>whatsup.com/+96277777777</p>
+            <p>&copy; all rights reserved</p>
+                
         </section>
-        <p>&copy; all rights reserved</p>
+        <section id="ft">
+            <h3>Join Our team</h3>
+            <p>Phone Number: +96274444444</p>
+            <p>E-mail : bbbbbb@gmail.com</p>
+            <p>whatsup.com/+96233333333</p>
+            <div class="ftrmg">
+            <img src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png" alt="">
+            <img src="https://cdn.icon-icons.com/icons2/642/PNG/512/linkedin_icon-icons.com_59208.png" alt="">
+            <img src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png" alt="">
+            <img src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580651-yumminkysocialmedia28_83061.png" alt="">
+        </div>    
+        </section>
+
     </footer>
 </body>
+
 </html>
