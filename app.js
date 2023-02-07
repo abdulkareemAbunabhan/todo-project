@@ -22,3 +22,32 @@ if(doUwantWelcome == true){
         alert(`welcome ${name1}`);
     }
 }
+
+let question1 = prompt("is your goal to have more achievments in your life? -answer with yes or no-");
+let question2 = prompt("do you know your goals for at least 6 months from now?-answer with yes or no-");
+let question3 = prompt("Are you ready to real commitment and self discipline to be a better you?-answer with yes or no-");
+
+function checkTheAnswer(enterArray){
+    let userAnswerLowerCase;
+    for(let i=0 ; i<enterArray.length ; i++){
+        userAnswerLowerCase = enterArray[i].toLowerCase().trim();
+        if(userAnswerLowerCase === "yes" || userAnswerLowerCase === "no"){
+            enterArray[i]=userAnswerLowerCase;
+        }else{
+            enterArray[i]="invalid";
+        }   
+    }
+    return enterArray;
+}
+
+let userAnswer =[question1,question2,question3];
+
+checkTheAnswer(userAnswer);
+
+function printArrays(arr){
+    for(let i=0 ; i<arr.length;i++){
+        console.log(arr[i]);
+    }
+}
+
+printArrays(userAnswer);
